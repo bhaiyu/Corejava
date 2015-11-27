@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.url">
+			jdbc:mysql://localhost:3306/DEMO_ORS
+		</property>
+		<property name="connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password"></property>
+		<property name="dialect">
+			org.hibernate.dialect.MySQLDialect
+		</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		<mapping resource="in/co/sunrays/ocha/bean/RoleDTO.hbm.xml" />
+		<mapping resource="in/co/sunrays/ocha/bean/MarksheetDTO.hbm.xml" />
+		<mapping resource="in/co/sunrays/ocha/bean/UserDTO.hbm.xml" />
+		<mapping resource="in/co/sunrays/ocha/bean/CollegeDTO.hbm.xml" />
+		<mapping resource="in/co/sunrays/ocha/bean/StudentDTO.hbm.xml" />
+
+	</session-factory>
+</hibernate-configuration>
