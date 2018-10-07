@@ -22,6 +22,8 @@ public class UserDTO extends BaseDTO {
 	private String lastLoginIP;
 
 
+	
+	
 	public String getFirstName() {
 		return firstName;
 	}
